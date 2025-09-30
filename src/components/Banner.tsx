@@ -2,8 +2,8 @@
 import Container from "@/app/Layout/Container";
 import Flex from "@/app/Layout/Flex";
 import { products } from "@/utils/products";
-import { Link } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { BiArrowToRight } from "react-icons/bi";
 
@@ -76,14 +76,13 @@ const Banner = () => {
     Save upto {Math.round(((product.mainprice - product.offerprice) / product.mainprice) * 100)}%
                     </h2>
                     <button className="font-medium flex items-center gap-x-2 mt-3">
-                      <Link to={`/product/${product.id}`}>
+                      <Link href={`/product/${product.id}`}>
                       <span className="border-b border-white">Shop Now </span>
                       </Link>
                       <BiArrowToRight size={24} />
                     </button>
                   </div>
 
-                  {/* Right side image */}
                   <div className="pr-[100px] relative">
                     <Image
                       src={product.image}
