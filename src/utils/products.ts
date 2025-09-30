@@ -28,7 +28,8 @@ interface Products{
   status: string,
   rating: number,
   stars: number,
-  sizes: boolean,
+  sizes?: boolean | string[],
+  colors?: boolean | string[],
   isStock: boolean
 }
 
