@@ -14,3 +14,8 @@ h2{
 h3{
   @apply text-4xl font-semibold leading-12 tracking-[4%] font-heading text-black;
 }
+
+/* .hello{
+  margin-top: 100px;
+
+} */

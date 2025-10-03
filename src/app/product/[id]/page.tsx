@@ -28,9 +28,10 @@ const ProductDetails: React.FC = () => {
     }
   });
   return (
+    <div className=" mt-[130px] ">
     <Container>
-      <div className="p-6 pt-[130px] pb-[140px] font-body grid grid-cols-1 md:grid-cols-2 gap-10">
-        <div className="flex gap-4">
+      <div className="p-6  pb-[140px] font-body grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="flex justify-between items-start gap-4">
           <div className="flex flex-col gap-4 w-20">
             <Image
               src={product?.image ?? "/placeholder.png"}
@@ -42,7 +43,8 @@ const ProductDetails: React.FC = () => {
             <Image
               src={product?.image ?? "/placeholder.png"}
               alt="main"
-              className="w-full bg-[#F5F5F5] rounded-xl object-cover"
+              width={80}
+              className="w-full p-10 bg-[#F5F5F5] rounded-xl object-cover"
             />
           </div>
         </div>
@@ -180,6 +182,7 @@ const ProductDetails: React.FC = () => {
         </Container>
       </div>
     </Container>
+    </div>
   );
 };
 

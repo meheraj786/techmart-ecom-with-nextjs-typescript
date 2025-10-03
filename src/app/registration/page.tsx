@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import Container from "../Layout/Container";
 import sideImg from '../../../public/SideImage.png'
 import Image from "next/image";
+import '@/app/globals.css'
 
 const Registration: React.FC = () => {
     const [showPassword, setShowPassword] = useState(false);
