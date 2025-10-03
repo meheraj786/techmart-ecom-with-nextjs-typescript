@@ -28,7 +28,7 @@ const ProductDetails: React.FC = () => {
     }
   });
   return (
-    <div className=" mt-[130px] ">
+    <div className=" mt-[100px] ">
     <Container>
       <div className="p-6  pb-[140px] font-body grid grid-cols-1 md:grid-cols-2 gap-10">
         <div className="flex justify-between items-start gap-4">

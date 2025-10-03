@@ -59,14 +59,14 @@ const Header = () => {
               className="bg-[#F5F5F5] px-5 py-3 pr-[70px] rounded-s"
               placeholder="What are you looking for?"
             />
-            <span className="p-[10px] cursor-pointer hover:bg-primary rounded-full transition-colors duration-150 hover:text-white">
+            <Link href="/wishlist" className="p-[10px] cursor-pointer hover:bg-primary rounded-full transition-colors duration-150 hover:text-white">
               <BiHeart size={26} />
-            </span>
-            <span className="p-[10px] cursor-pointer hover:bg-primary rounded-full transition-colors duration-150 hover:text-white">
+            </Link>
+            <Link href="/cart" className="p-[10px] cursor-pointer hover:bg-primary rounded-full transition-colors duration-150 hover:text-white">
               <BiCart size={26} />
-            </span>
+            </Link>
             <Link
-              href="/registration"
+              href="/dashboard"
               className="p-[10px] cursor-pointer hover:bg-primary rounded-full transition-colors duration-150 hover:text-white"
             >
               <BiUser size={26} />
