@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
-import { Poppins, Inter } from "next/font/google";
+import { Poppins, Inter, Montserrat_Underline } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 const interSans = Inter({
   variable: "--font-heading",
+  subsets: ["latin"],
+});
+const montserrat = Montserrat_Underline({
+  variable: "--font-logo",
   subsets: ["latin"],
 });
 
@@ -28,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${interSans.variable} ${poppins.variable} antialiased`}
+        className={`${interSans.variable} ${poppins.variable} ${montserrat.variable}  antialiased`}
       >
         <Header/>
         {children}

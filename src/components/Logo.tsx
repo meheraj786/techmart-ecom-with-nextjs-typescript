@@ -1,13 +1,16 @@
-import React from 'react'
+import Link from "next/link";
+import React from "react";
 
-interface LogoType{
-  className?: string
-}
-
-const Logo = ({className}:LogoType) => {
+const Logo = ({ className } : {className : string}) => {
   return (
-    <div className={`${className}`}>Logo</div>
-  )
-}
+    <Link href="/">
+      <div
+        className={` font-logo text-[28px] text-black font-bold cursor-pointer ${className}`}
+      >
+        TECHMART
+      </div>
+    </Link>
+  );
+};
 
-export default Logo
+export default Logo;
